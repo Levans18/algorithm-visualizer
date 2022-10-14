@@ -3,17 +3,30 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 import App from './App';
+import { ThemeProvider, createTheme } from '@mui/material/styles'
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#3c4daf',
+    },
+    secondary: {
+      main: 'rgba(145,31,236,0.95)',
+    },
+  },
+});
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+      <Provider store={store}>
+        <ThemeProvider theme={theme} >
+        <App />
+        </ThemeProvider>
+      </Provider>
   </React.StrictMode>
 );
 
