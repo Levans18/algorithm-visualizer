@@ -36,7 +36,6 @@ export const sortingSlice = createSlice({
         newArray: (state) => {
             state.array = createArray(state.array.length);
             state.arrayColors = [];
-            state.stopSort = true;
         },
 
         updateArray: (state, action) => {
