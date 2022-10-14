@@ -3,11 +3,12 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import SVP from './resources/Images/Sorting-Visualizer.png'
 import { CardActionArea } from '@mui/material';
 
 import { Link } from 'react-router-dom'
 
-import "./Home.css"
+import "./resources/Home.css"
 
 export default function Home(){
 
@@ -22,14 +23,18 @@ export default function Home(){
                         <CardActionArea>
                             <CardMedia 
                             component="img"
-                            height="200">
+                            height="200"
+                            image={SVP}
+                            alt="Sorting Visualizer"
+                            className="Sorting-Visualizer-Pic"
+                            >
                             </CardMedia>
                             <CardContent className="card-content">
                                 <Typography gutterBottom variant="h5" component="div">
                                     Sorting Visualizer
                                 </Typography>
                                 <Typography variant="body2">
-                                    PeePeePooPooCheck
+                                    Visualizer for Bubble Sort, Selection Sort, Quick Sort and Merge Sort
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -47,7 +52,7 @@ export default function Home(){
                                     Path Finding Visualizer
                                 </Typography>
                                 <Typography variant="body2">
-                                    PeePeePooPooCheck
+                                    Path Finding with BFS and DFS
                                 </Typography>
                             </CardContent>
                         </CardActionArea>

@@ -1,0 +1,52 @@
+footer{
+    background-color: #293241;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label{
+    color: white;
+}
+
+#array-slider, #speed-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sorting-algorithm-buttons{
+    display: flex;
+}
+
+.sorting-algorithm-buttons{
+    margin-right: 25px;
+}
+
+input{
+    width: 200px
+}
+
+.array-size-slider{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-left: 25px;
+}
+
+.array-modifier-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.new-array-button{
+    height: 40px;
+}
+
+.no-click {
+    pointer-events: none;
+}

@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from './pages/home/Home';
 import Sorting from './pages/sorting/Sorting';
 import PathFinding from './pages/path-finding/PathFinding'
-import './App.css';
 
 function App() {
   return (
